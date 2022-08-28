@@ -1,0 +1,146 @@
+
+/* ------------------Responsible----MEnu------------------------------------ */
+@media (max-width:1100px){
+    .mainContainer{
+        height: auto;
+    }
+    .nav-menu{
+        background-color:  #2B488B;;
+        height:             190px;
+    }
+        .logo{
+            flex-direction:     column;
+            top:                0;
+            left:               0;
+            width:              100%;
+            z-index:            12;
+        }
+       .logo img{
+          margin-top:           10px;
+        }
+    }
+    @media (max-width:560px){
+        .logo p {
+            font:               normal normal normal 5vw/46px Ubuntu;
+        }
+    }
+    /* ----------END--------Responsible----MEnu------------------------------------ */
+    
+    /* ------------------Responsible----Graphics--and TXT---------------------------------- */
+    @media (max-width:1100px){
+        .counting-down{
+            height:                   631px;  
+        }
+        .mg1-person{   
+            height:         843px;
+            top:            -183px;
+            left:           72px;
+            opacity:        .4;
+            width:          214px;
+            z-index:        1;
+        }
+        .mg3-left{
+            top:            -88.2px;
+            width:          350px;
+            
+        }
+        .mg4-right{
+             width:          372px;
+        }
+        /* -- TXT-- */
+        .txt1 {
+            font:                   normal normal normal 12vmin/187px Grafolita Script;
+            text-align:             right;
+            z-index: 11;
+        }
+        .txt2,
+        .txt3 {
+            font:               normal normal normal 4.5vmin/40px URW Antiqua;
+            letter-spacing:     6.6px;
+            text-align:         right;
+            z-index:            12;
+        }
+        .mainTxt{
+            z-index:            33;
+                }
+    }
+    /* --END TXT-- */
+    /* -----END-------------Responsible----Graphics--and TXT---------------------------------- */
+    
+    /* ---------------Responsible----Time--and BTN---------------------------------- */
+    @media (max-width:1100px) {
+    .window-cd-1 ,
+    .window-cd-2 ,
+    .window-cd-3{
+        box-shadow:             1px 1px 23px -9px  #2B488B;
+        font:                   normal normal normal 80px/90px URW Antiqua;
+        height:                 150px;
+        width:                  150px;
+    }
+    .numTxt{
+        letter-spacing:     12px;
+        font:               normal normal normal 15px/64px URW Antiqua;
+        letter-spacing:     3px;
+        margin-left:        10px;
+     }
+    .cd{
+        display:            flex;
+        flex-direction:     row;
+        
+        justify-content:    space-around;
+        align-items:        center;
+       
+        width:              100%;
+        height:             100%;
+        z-index:            2;
+    }
+    /* BTN */
+    .btn{
+        width:                  80vmin;
+        padding:                10px;
+        }
+    .btn-txt{
+        color:            #FFFFFF;
+        font:               normal normal normal 5vmin/45px URW Antiqua;
+        letter-spacing:     5px;
+    }
+    /* END BTN */
+    }
+    /* ---------END------Responsible----Time------------------------------------ */
+    /* ---------------Responsible----Register------------------------------------ */
+    @media (max-width:1100px){
+        /* register */
+    .register{
+        height: auto;
+    }
+    .mg5-left{
+        width:          10vmin;
+        bottom:          0 
+    }
+    .mg6-right{
+        top:            -100px;
+        width:          236px;
+       }
+    .counter-1 .counterTxt-1{
+        color:          #2B488B;
+        font:             normal normal normal 100px/173px URW Antiqua;
+        letter-spacing:   5px;
+        }
+    .mainTxt-1 .txt-1{
+            font:               normal normal normal 5vmin/48px URW Antiqua;
+            letter-spacing:     5.5px;
+            margin-bottom:      100px;
+            text-align:         center;
+                }
+    /* Armchairs */
+    .mainCh1{
+    width: 80%;
+    }
+    /* End Armchairs */
+    .mainTxt3{
+    
+        font:               normal normal normal 4vmin/50px URW Antiqua;
+        letter-spacing:     6.4px;
+        margin-top:         3%;
+    }
+    }
