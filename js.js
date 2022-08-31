@@ -9,9 +9,9 @@ window.onload = function() {
 function clickCounter()
 {
     var anchor = document.querySelector('a');
-    anchor.addEventListener('click',function(){
+    anchor.addEventListener('click',function()
+    {
         fetch('link.php');
-       
     })
 }
 clickCounter();
@@ -20,66 +20,47 @@ document.getElementById('btn1').addEventListener('click',loadTxt);
 
 function loadTxt()
 {
+    //file count created by php
     fetch('count.txt')
     .then(function(response){
         return response.text();
     })
     .then(function(data){
         document.getElementById('result').innerHTML = data ;
-        function Zapalenie(res)
+        //change of armchais opacity
+        function Zapalenie(res) 
         {
             for(var i=0;i<res;i++)
                 {
                     document.getElementsByClassName("logo1"+i)[0].style.opacity=1; 
                 }
-    
-            if(res<40)
+            if(res>80)
             {
                 document.getElementsByClassName("logo1"+res)[0].style.opacity=1; 
             }else{
-                alert("Chyba se postoisz :)");
+                alert("ups");
             }
+             //END change of armchais opacity
         }
         Zapalenie(data)
     })
 }
 //media remove Armchairs
-function checkMediaQuery() {
-   
+function checkMediaQuery() 
+{
     if (window.innerWidth < 500) {
-  
-      var thingToRemove = document.querySelectorAll(".mainArmchais2")[0];
-
-      thingToRemove.parentNode.removeChild(thingToRemove);
-    
+    var thingToRemove = document.querySelectorAll(".mainArmchais2")[0];
+    thingToRemove.parentNode.removeChild(thingToRemove);
     }
-  }
+}
   
 
   window.addEventListener('resize', checkMediaQuery)
   // end media remove Armchairs
 
-function Zapalenie()
-{
-    fetch('count.txt')
-    .then(function(response){ 
-        return response.text();
-    })
-    .then(function(data)
-    {
-             if(res<40)
-             {
-                document.getElementsByClassName("logo1"+res)[0].style.opacity=1; 
-          
-            }else
-            {
-                alert("Chyba se postoisz :)");
-            }
-    })
-}
 
 
-
+//reduction  Armchairs opaticy
 function color()
 {
     for(var i=0;i<40;i++)
@@ -97,7 +78,7 @@ function color()
     }
 
 }
-
+//  END reduction   Armchairs opaticy
   
 
 
